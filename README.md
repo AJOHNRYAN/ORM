@@ -35,6 +35,8 @@ Apply the migration files of the created app to the database
 Execute Django admin using localhost and create details for 10 entries
 
 ## PROGRAM
+~~~
+models.py
 from django.db import models
 from django.contrib import admin
 class Service(models.Model):
@@ -48,9 +50,16 @@ class Service(models.Model):
 class ServiceAdmin(admin.ModelAdmin):
     list_display = ("Vehical_NO", "Vehical_Name", "Name", "mobile", "Address","Fault","Billings")
 
+admin.py
+from django.contrib import admin
+from .models import Service, ServiceAdmin
+admin.site.register(Service, ServiceAdmin)
+
+~~~
+
 
 ## OUTPUT
-<img width="1600" height="900" alt="WhatsApp Image 2026-10-12 at 2 03 36 PM" src="https://github.com/user-attachments/assets/e4e2e3b5-f0bb-482f-94ba-22e1750212d9" />
+<img width="1600" height="900" alt="WhatsApp Image 2026-10-12 at 2 03 36 PM" src="https://github.com/user-attachments/assets/43b8f2d7-999f-4451-982f-69a57fbb7c99" />
 
 
 
