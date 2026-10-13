@@ -1,13 +1,8 @@
 # Ex02 Django ORM Web Application
-## Date: 
+## Date: 13-10-2026
 
 ## AIM
 To develop a Django Application to store and retrieve data from a Vehicle Service Database platform using Object Relational Mapping(ORM).
-
-## ENTITY RELATIONSHIP DIAGRAM
-
-
-
 ## DESIGN STEPS
 
 ### STEP 1:
